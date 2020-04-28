@@ -7,18 +7,29 @@
 
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.startthread.test.MainFragment"
+        android:name="com.startthread.navigationsample.MainFragment"
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" />
 
 
     <activity
         android:id="@+id/dynamicFeatureActivity"
-        android:name="com.startthread.dynamicfeature.DynamicFeatureActivity"
+        android:name="com.startthread.navigationsample.dynamicfeature.DynamicFeatureActivity"
         app:moduleName="dynamicfeature" />
 
     <action
         android:id="@+id/action_to_dynamic_feature_activity"
         app:destination="@id/dynamicFeatureActivity" />
 
+    <include-dynamic
+        android:id="@+id/includeDynamicFeatureActivity"
+        app:moduleName="dynamicfeature"
+        app:graphResName="navigation_dynamic_feature"
+        app:graphPackage="com.startthread.navigationsample.dynamicfeature" />
+
+    <action
+        android:id="@+id/action_to_include_dynamic_feature_activity"
+        app:destination="@id/includeDynamicFeatureActivity" />
+
 </navigation>
+

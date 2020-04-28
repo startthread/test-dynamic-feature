@@ -1,7 +1,7 @@
-package com.startthread.dynamicfeature
+package com.startthread.navigationsample.dynamicfeature
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 
 class DynamicFeatureActivity : AppCompatActivity() {
 

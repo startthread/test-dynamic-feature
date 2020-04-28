@@ -1,4 +1,4 @@
-package com.startthread.test
+package com.startthread.navigationsample
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -25,8 +25,20 @@ class MainFragment : Fragment() {
 
     private fun setupView() {
         getView()?.findViewById<Button>(R.id.button)?.setOnClickListener {
-            Navigation.findNavController(requireActivity(), R.id.nav_host_fragment).navigate(
+            Navigation.findNavController(
+                requireActivity(),
+                R.id.nav_host_fragment
+            ).navigate(
                 R.id.action_to_dynamic_feature_activity
+            )
+        }
+
+        getView()?.findViewById<Button>(R.id.include_button)?.setOnClickListener {
+            Navigation.findNavController(
+                requireActivity(),
+                R.id.nav_host_fragment
+            ).navigate(
+                R.id.action_to_include_dynamic_feature_activity
             )
         }
     }

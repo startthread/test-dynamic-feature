@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_dynamic_feature"
+    app:startDestination="@id/includeDynamicFeatureActivity">
+
+    <activity
+        android:id="@+id/includeDynamicFeatureActivity"
+        android:name="com.startthread.navigationsample.dynamicfeature.DynamicFeatureActivity"
+        android:label="activity_dynamic_feature"
+        tools:layout="@layout/activity_dynamic_feature" />
+
+</navigation>

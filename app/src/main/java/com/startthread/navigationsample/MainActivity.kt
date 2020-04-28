@@ -1,7 +1,7 @@
-package com.startthread.test
+package com.startthread.navigationsample
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
 
